@@ -2,11 +2,10 @@
   "tests": [
     {
       "test_name": "build-alloc",
-      "command": "RUSTFLAGS=\"-D warnings\" cargo build --release --target {target_platform}-unknown-none --no-default-features --features alloc",
-      "platform": [
-        "x86_64",
-        "aarch64"
-      ]
+      "command": "cd {crate_path} && RUSTFLAGS=\"-D warnings\" cargo build --release --target {target_platform}-unknown-none --no-default-features --features alloc",
+      "platform": ["x86_64", "aarch64"],
+      "if_changed": "vm-fdt/*",
+      "crate_path": "vm-fdt"
     }
   ]
 }
