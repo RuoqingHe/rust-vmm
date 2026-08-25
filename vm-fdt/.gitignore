@@ -1,4 +1,0 @@
-target
-Cargo.lock
-kcov_output*
-kcov_build
