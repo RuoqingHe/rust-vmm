@@ -316,7 +316,7 @@ impl FdtWriter {
 
     // Append `num_bytes` padding bytes (0x00).
     fn pad(&mut self, num_bytes: usize) {
-        self.data.extend(core::iter::repeat(0).take(num_bytes));
+        self.data.extend(core::iter::repeat_n(0, num_bytes));
     }
 
     // Append padding bytes (0x00) until the length of data is a multiple of `alignment`.
