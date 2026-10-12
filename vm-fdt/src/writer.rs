@@ -1003,7 +1003,7 @@ mod tests {
     #[test]
     #[cfg(feature = "long_running_test")]
     fn test_overflow_subtract() {
-        let overflow_size = u32::MAX / std::mem::size_of::<FdtReserveEntry>() as u32 - 3;
+        let overflow_size = u32::MAX / core::mem::size_of::<FdtReserveEntry>() as u32 - 3;
         let too_large_mem_reserve: Vec<FdtReserveEntry> = (0..overflow_size)
             .map(|i| FdtReserveEntry::new(u64::from(i) * 2, 1).unwrap())
             .collect();
