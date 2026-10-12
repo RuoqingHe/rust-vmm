@@ -1,3 +1,12 @@
+# Upcoming Release
+
+## Removed
+- [[#119](https://github.com/rust-vmm/rust-vmm/pull/119)] Removed the `alloc`
+  feature. The feature was broken: it only gated the `hashbrown` import while
+  the crate unconditionally requires an allocator. `hashbrown` is now a
+  mandatory dependency so that `no_std` builds work out of the box with
+  `--no-default-features`.
+
 # v0.3.0
 
 ## Added

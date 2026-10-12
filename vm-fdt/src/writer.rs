@@ -15,7 +15,7 @@ use core::mem::size_of_val;
 #[cfg(feature = "std")]
 use std::collections::HashSet;
 
-#[cfg(all(feature = "alloc", not(feature = "std")))]
+#[cfg(not(feature = "std"))]
 use hashbrown::HashSet;
 
 use crate::{
