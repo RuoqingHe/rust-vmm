@@ -5,7 +5,7 @@ description = "Crate for writing Flattened Devicetree blobs"
 authors = ["The Chromium OS Authors"]
 license = "Apache-2.0 OR BSD-3-Clause"
 edition = "2018"
-repository = "https://github.com/rust-vmm/vm-fdt"
+repository.workspace = true
 keywords = ["fdt"]
 
 [dependencies]
