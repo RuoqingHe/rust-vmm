@@ -4,7 +4,7 @@ version = "0.3.0"
 description = "Crate for writing Flattened Devicetree blobs"
 authors = ["The Chromium OS Authors"]
 license = "Apache-2.0 OR BSD-3-Clause"
-edition = "2018"
+edition = "2021"
 repository.workspace = true
 keywords = ["fdt"]
 
